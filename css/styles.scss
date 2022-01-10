@@ -1,0 +1,50 @@
+$main_font: 'DM Sans', sans-serif;
+$rosario_font: 'Rosario', sans-serif;
+body{
+  font-family: $main_font;
+  font-weight: normal;
+  color: #222222;
+;
+}
+.navbar-collapse{
+  flex-grow: 0;
+}
+.navbar{
+  padding-top: 50px;
+  padding-bottom: 43px;
+}
+.navbar-light .navbar-nav .nav-link{
+  color: #222222;
+}
+.bg-od{
+  background-color: #F3FBF8;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.btn-od{
+  padding: 0 23px;
+  height: 40px;
+  background: #09A66D;
+  border-radius: 8px;
+  border: none;
+  font-size: 18px;
+  line-height: 40px;
+  transition: background-color 0.3s ease-in;
+}
+.btn-od:hover{
+  background-color: rgba(27,194,133,0.75);
+}
+.ml-58{
+  margin-left: 58px;
+}
+a.after:after{
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: #09A66D;
+  border-radius: 50%;
+  position: absolute;
+  top: 7px;
+  right: 14px;
+}
