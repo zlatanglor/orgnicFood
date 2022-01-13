@@ -21,6 +21,14 @@ body{
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  img{
+    transition: transform 0.2s ease-in;
+  }
+  &:hover{
+    img{
+      transform: scale(1.1);
+    }
+  }
 }
 .btn-od{
   padding: 0 23px;
@@ -50,6 +58,21 @@ a.after:after{
 }
 .fruit_vegetables{
   background-color: #F3FBF8;
+  .bef-od{
+    &:before{
+      content: "";
+      max-width: 612px;
+      width: 100%;
+      max-height: 408px;
+      height: 100%;
+      background: url(../images/fresh-melientha-suavis-pierre-leaves-white-surface_51524-12145-removebg-preview.png);
+      background-repeat: no-repeat;
+      background-position: left top;
+      position: absolute;
+      top: -140px;
+      left: -80px;
+    }
+  }
   p{
     font-size: 18px;
     line-height: 30px;
@@ -70,7 +93,7 @@ a.after:after{
     p{
       color: #000000;
     }
-    .specifications_foto{
+    .specifications_icon{
       background-color: #F3FBF8;
       width: 64px;
       height: 64px;
@@ -83,18 +106,64 @@ a.after:after{
     }
   }
 }
-.fruit_vegetables:before{
-  content: "";
-  max-width: 612px;
-  width: 100%;
-  max-height: 408px;
-  height: 100%;
-  background: url(../images/fresh-melientha-suavis-pierre-leaves-white-surface_51524-12145-removebg-preview.png);
-  background-repeat: no-repeat;
-  background-position: left top;
-  position: absolute;
-  top: 112px;
-  left: 0;
+.we_best{
+  span{
+    &.arrow{
+      &:before{
+        content: url("../images/icons/arrow_gr.svg");
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateY(41px);
+      }
+    }
+  }
+  p{
+    font-size: 18px;
+    line-height: 30px;
+    color: #555555;
+  }
+  .servise{
+    h4{
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 32px;
+    }
+    p{
+      font-size: 14px;
+      line-height: 20px;
+      color: #555555;
+    }
+    transition: box-shadow 0.3s ease-in;
+    &:hover{
+      box-shadow: 0 0 17px #75ba75;
+    }
+    .servise_icon{
+      background-color: #F3FBF8;
+      width: 80px;
+      height: 80px;
+      line-height: 80px;
+      border-radius: 50%;
+      img{
+        width: 40px;
+        height: 40px;
+      }
+    }
+    &.bg-ods{
+      background-color: #F3FBF8;
+      .servise_icon{
+        background-color: white;
+      }
+    }
+  }
+}
+.special_items{
+  background-color: rgba(9, 166, 109, 0.05);
+  p{
+    font-size: 18px;
+    line-height: 30px;
+    color: #555555;
+  }
 }
 .heading{
   font-family: $rosario_font;

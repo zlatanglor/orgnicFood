@@ -18,6 +18,10 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%; }
+  .bg-od img {
+    transition: transform 0.2s ease-in; }
+  .bg-od:hover img {
+    transform: scale(1.1); }
 
 .btn-od {
   padding: 0 23px;
@@ -47,6 +51,18 @@ a.after:after {
 
 .fruit_vegetables {
   background-color: #F3FBF8; }
+  .fruit_vegetables .bef-od:before {
+    content: "";
+    max-width: 612px;
+    width: 100%;
+    max-height: 408px;
+    height: 100%;
+    background: url(../images/fresh-melientha-suavis-pierre-leaves-white-surface_51524-12145-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    position: absolute;
+    top: -140px;
+    left: -80px; }
   .fruit_vegetables p {
     font-size: 18px;
     line-height: 30px;
@@ -63,28 +79,58 @@ a.after:after {
       font-weight: normal; }
     .fruit_vegetables .specifications p {
       color: #000000; }
-    .fruit_vegetables .specifications .specifications_foto {
+    .fruit_vegetables .specifications .specifications_icon {
       background-color: #F3FBF8;
       width: 64px;
       height: 64px;
       line-height: 64px;
       border-radius: 50%; }
-      .fruit_vegetables .specifications .specifications_foto img {
+      .fruit_vegetables .specifications .specifications_icon img {
         width: 32px;
         height: 32px; }
 
-.fruit_vegetables:before {
-  content: "";
-  max-width: 612px;
-  width: 100%;
-  max-height: 408px;
-  height: 100%;
-  background: url(../images/fresh-melientha-suavis-pierre-leaves-white-surface_51524-12145-removebg-preview.png);
-  background-repeat: no-repeat;
-  background-position: left top;
+.we_best span.arrow:before {
+  content: url("../images/icons/arrow_gr.svg");
   position: absolute;
-  top: 112px;
-  left: 0; }
+  bottom: -10px;
+  left: 50%;
+  transform: translateY(41px); }
+.we_best p {
+  font-size: 18px;
+  line-height: 30px;
+  color: #555555; }
+.we_best .servise {
+  transition: box-shadow 0.3s ease-in; }
+  .we_best .servise h4 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px; }
+  .we_best .servise p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #555555; }
+  .we_best .servise:hover {
+    box-shadow: 0 0 17px #75ba75; }
+  .we_best .servise .servise_icon {
+    background-color: #F3FBF8;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%; }
+    .we_best .servise .servise_icon img {
+      width: 40px;
+      height: 40px; }
+  .we_best .servise.bg-ods {
+    background-color: #F3FBF8; }
+    .we_best .servise.bg-ods .servise_icon {
+      background-color: white; }
+
+.special_items {
+  background-color: rgba(9, 166, 109, 0.05); }
+  .special_items p {
+    font-size: 18px;
+    line-height: 30px;
+    color: #555555; }
 
 .heading {
   font-family: "Rosario", sans-serif;
