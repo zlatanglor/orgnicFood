@@ -16,7 +16,7 @@
 </head>
 <body>
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light py-3 py-lg-5">
         <div class="container">
             <div class="collapse navbar-collapse order-lg-3">
                 <ul class="navbar-nav">
@@ -52,10 +52,11 @@
         </div>
     </nav>
 </header>
-<section class="fruit_vegetables pt-lg-5 pb-lg-4">
-    <div class="container text-center mt-lg-5 position-relative bef-od">
-        <h1 class="heading mb-3">Organic Fruit & Vegetables</h1>
-        <p class="mb-4 pt-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+<section class="fruit_vegetables py-5 pt-lg-5 pb-lg-4">
+    <div class="container text-center mt-lg-5 position-relative">
+        <span class="leaves position-absolute"></span>
+        <h1 class="titles mb-3 position-relative">Organic Fruit & Vegetables</h1>
+        <p class="paragraph_text mb-4 pt-1 position-relative">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
             Lorem Ipsum has been the industry's standard dummy text ever since the<br>
             1500s, when an unknown printer took a galley...</p>
         <button type="button" class="btn btn-outline-dark btn-now pt-lg-3">Order Now</button>
@@ -98,8 +99,8 @@
 </section>
 <section class="we_best py-lg-5">
     <div class="container mt-lg-5">
-        <h2 class="heading mb-4">Why We Aer The Best?</h2>
-        <p class="pt-1 mb-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+        <h2 class="titles mb-4">Why We Aer The Best?</h2>
+        <p class="paragraph_text pt-1 mb-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
             Lorem Ipsum has been the industry's standard dummy text ever since the<br>
             1500s, when an unknown printer took a galley...</p>
         <div class="row justify-content-between align-items-center">
@@ -144,48 +145,132 @@
         </div>
     </div>
 </section>
-<section class="special_items py-lg-5">
-    <div class="container py-lg-5">
+<section class="special_items py-lg-5 overflow-hidden">
+    <div class="container py-lg-5 position-relative">
         <div class="row justify-content-between">
-            <div class="col-lg-6 pe-lg-4">
+            <div class="special_items-photo col-lg-6 pe-lg-4">
                 <img class="w-100 d-inline-block" src="images/items.jpg" alt="items">
             </div>
-            <div class="col-lg-6 pt-lg-4 ps-lg-4">
-                <h1 class="heading mb-3">Explor Our Special Items</h1>
-                <p class="mb-4 pt-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley...</p>
+            <div class="special_items-text col-lg-6 pt-lg-4 ps-lg-4 position-relative">
+                <h2 class="titles mb-3">Explor Our Special Items</h2>
+                <p class="paragraph_text mb-4 pt-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley...</p>
                 <button type="button" class="btn btn-outline-dark btn-now pt-lg-4">Explor Now</button>
+            </div>
+        </div>
+        <span class="leaves position-absolute"></span>
+    </div>
+</section>
+<section class="reviews py-5 position-relative">
+    <div class="container py-lg-5">
+        <h3 class="titles mb-4">What Our Customers<br>
+            About Us saying</h3>
+        <div class="owl-carousel">
+            <div class="reviews_owl-content d-flex justify-content-sm-center justify-content-md-between align-items-md-center align-items-lg-end flex-wrap">
+                <div class="reviews_owl-content-text">
+                    <p class="paragraph_text mb-2 mb-lg-4 pt-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularis</p>
+                    <h4 class="mb-3 pt-lg-3">Ahmed Hridoy</h4>
+                    <div class="reit d-flex pt-1">
+                        <img class="me-2" src="images/icons/star.svg" alt="star">
+                        <img class="me-2" src="images/icons/star.svg" alt="star">
+                        <img class="me-2" src="images/icons/star.svg" alt="star">
+                        <img class="me-2" src="images/icons/star.svg" alt="star">
+                        <img src="images/icons/star1.svg" alt="star">
+                    </div>
+                </div>
+                <div class="reviews_owl-content-photo">
+                    <img src="images/rew_photo.jpg" alt="Ahmed-Hridoy">
+                </div>
+            </div>
+            <div class="reviews_owl-content d-flex justify-content-sm-center justify-content-md-between align-items-md-center align-items-lg-end flex-wrap">
+                <div class="reviews_owl-content-text">
+                    <p class="paragraph_text mb-2 mb-lg-4 pt-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam animi aperiam, assumenda consectetur consequatur delectus deserunt eaque error esse eveniet exercitationem impedit laboriosam modi necessitatibus porro quidem reprehenderit sunt temporibus!</p>
+                    <h4 class="mb-3 pt-lg-3">Ahmed Ivan Hridoy</h4>
+                    <div class="reit d-flex pt-1">
+                        <img class="me-2" src="images/icons/star.svg" alt="star">
+                        <img class="me-2" src="images/icons/star.svg" alt="star">
+                        <img class="me-2" src="images/icons/star.svg" alt="star">
+                        <img src="images/icons/star1.svg" alt="star">
+                    </div>
+                </div>
+                <div class="reviews_owl-content-photo">
+                    <img src="images/rew_photo.jpg" alt="Ahmed-Hridoy">
+                </div>
             </div>
         </div>
     </div>
 </section>
-<!--<section class="reviews">-->
-<!--    <div class="container">-->
-<!--        <div class="owl-carousel">-->
-<!--            <div class="d-flex justify-content-between align-items-stretch">-->
-<!--                <div>-->
-<!--                    <h1 class="heading mb-3">What Our Customers <br>-->
-<!--                        About Us saying</h1>-->
-<!--                    <p class="mb-4 pt-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>-->
-<!--                        Lorem Ipsum has been the industry's standard dummy text ever since the<br>-->
-<!--                        1500s, when an unknown printer took a galley...</p>-->
-<!--                    <h4>Ahmed Hridoy</h4>-->
-<!--                    <div class="reit d-flex " style="width: max-content">-->
-<!--                        <img src="images/icons/star.svg" alt="star">-->
-<!--                        <img src="images/icons/star.svg" alt="star">-->
-<!--                        <img src="images/icons/star.svg" alt="star">-->
-<!--                        <img src="images/icons/star.svg" alt="star">-->
-<!--                        <img src="images/icons/star1.svg" alt="star">-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div>-->
-<!--                    <img src="images/rew_photo.jpg" alt="Ahmed-Hridoy">-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div> Your Content </div>-->
-<!--&lt;!&ndash;            <div> Your Content </div>&ndash;&gt;-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
+<section class="app py-5">
+    <div class="container pb-lg-5">
+        <div class="row justify-content-between">
+            <div class="col-lg-3 offset-lg-1 position-relative">
+                <img src="images/iphone_min.jpg" alt="iphone">
+                <img class="position-absolute last_photo" src="images/iphone_max.jpg" alt="iphone">
+            </div>
+            <div class="col-lg-7">
+                <a class="app_btn mb-3" href="#">Download App</a>
+                <h3 class="titles mb-3">Simple Way To Order Your Organic Fruit </h3>
+                <p class="paragraph_text mb-5 pt-1">Lorem Ipsum is simply dummy text of the printing and typesetting <br>
+                    industry. Lorem Ipsum has been the industry's standard dummy text <br>
+                    ever since the 1500s, when an unknown printer...</p>
+                <a class="btn p-0 me-3"><img src="images/AppStore.png" alt="App Store"></a>
+                <a class="btn p-0 ms-2"><img src="images/PlayMarket.png" alt="Play Market"></a>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="py-lg-5">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-lg-4">
+                <a class="d-inline-block mb-4" href="index.html"><img src="images/logo.svg" alt="logo"></a>
+                <p class="paragraph_text pt-1 m-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer...</p>
+            </div>
+            <div class="col-lg-2 offset-lg-1">
+                <h5 class="mb-lg-4">Navigation</h5>
+                <ul class="pt-lg-3 m-0">
+                    <li class="mb-lg-4">
+                        <a href="#">About Us</a>
+                    </li>
+                    <li class="mb-lg-4">
+                        <a href="#">Service</a>
+                    </li>
+                    <li>
+                        <a href="#">Menu</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-2">
+                <h5 class="mb-lg-4">Resources</h5>
+                <ul class="pt-lg-3 m-0">
+                    <li class="mb-lg-4">
+                        <a href="#">Reviews</a>
+                    </li>
+                    <li class="mb-lg-4">
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Update News</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <h5 class="mb-lg-4">Contact Us</h5>
+                <a class="d-inline-block pt-lg-3 mb-lg-4 text-decoration-none" href="mailto:oyasim@email.com">Email: oyasim@email.com</a>
+                <ul class="m-0 d-flex">
+                    <li class="me-5">
+                        <a href="#" title="facebook" target="_blank"><img src="images/social/facebook.svg" alt="facebook"></a>
+                    </li>
+                    <li class="me-5">
+                        <a href="#" title="twitter" target="_blank"><img src="images/social/twitter.svg" alt="twitter"></a>
+                    </li>
+                    <li>
+                        <a href="#" title="instagram" target="_blank"><img src="images/social/instagram.svg" alt="instagram"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
 
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

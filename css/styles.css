@@ -3,15 +3,58 @@ body {
   font-weight: normal;
   color: #222222; }
 
-.navbar-collapse {
-  flex-grow: 0; }
+.titles {
+  font-family: "Rosario", sans-serif;
+  font-weight: bold;
+  font-size: calc(40px + 30 * ((100vw - 320px) / 1120));
+  line-height: 1.29; }
 
-.navbar {
-  padding-top: 50px;
-  padding-bottom: 43px; }
+.paragraph_text {
+  color: #555555;
+  font-size: calc(16px + 2 * ((100vw - 320px) / 1120));
+  line-height: 1.67; }
 
-.navbar-light .navbar-nav .nav-link {
-  color: #222222; }
+.btn-now {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  color: #222222;
+  display: inline-block;
+  border: none;
+  padding: 0;
+  transition: all 0.2s ease-in; }
+  .btn-now:focus {
+    box-shadow: none; }
+  .btn-now:active:focus {
+    box-shadow: none; }
+  .btn-now:hover, .btn-now:active {
+    color: #09A66D;
+    background-color: transparent; }
+    .btn-now:hover:after, .btn-now:active:after {
+      opacity: 0.8; }
+  .btn-now:after {
+    content: url("../images/icons/arrow.png");
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    background-color: #09A66D;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+    transition: opacity 0.2s ease-in; }
+
+.btn-od {
+  padding: 0 23px;
+  height: 40px;
+  background: #09A66D;
+  border-radius: 8px;
+  border: none;
+  font-size: 18px;
+  line-height: 40px;
+  transition: background-color 0.3s ease-in; }
+  .btn-od:hover {
+    background-color: rgba(27, 194, 133, 0.75); }
 
 .bg-od {
   background-color: #F3FBF8;
@@ -23,21 +66,18 @@ body {
   .bg-od:hover img {
     transform: scale(1.1); }
 
-.btn-od {
-  padding: 0 23px;
-  height: 40px;
-  background: #09A66D;
-  border-radius: 8px;
-  border: none;
-  font-size: 18px;
-  line-height: 40px;
-  transition: background-color 0.3s ease-in; }
-
-.btn-od:hover {
-  background-color: rgba(27, 194, 133, 0.75); }
-
 .ml-58 {
   margin-left: 58px; }
+
+.leaves {
+  width: 100%;
+  max-width: 612px;
+  height: 100%;
+  max-height: 408px;
+  background: url(../images/fresh-melientha-suavis-pierre-leaves-white-surface_51524-12145-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain; }
 
 a.after:after {
   content: "";
@@ -49,35 +89,32 @@ a.after:after {
   top: 7px;
   right: 14px; }
 
+.navbar-collapse {
+  flex-grow: 0; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: #222222; }
+
 .fruit_vegetables {
   background-color: #F3FBF8; }
-  .fruit_vegetables .bef-od:before {
-    content: "";
-    max-width: 612px;
-    width: 100%;
-    max-height: 408px;
-    height: 100%;
-    background: url(../images/fresh-melientha-suavis-pierre-leaves-white-surface_51524-12145-removebg-preview.png);
-    background-repeat: no-repeat;
-    background-position: left top;
-    position: absolute;
-    top: -140px;
-    left: -80px; }
-  .fruit_vegetables p {
-    font-size: 18px;
-    line-height: 30px;
-    color: #555555; }
+  .fruit_vegetables .leaves {
+    left: -80px;
+    top: -140px; }
+    @media screen and (max-width: 991px) {
+      .fruit_vegetables .leaves {
+        top: -80px; } }
   .fruit_vegetables .specifications {
     background-color: white;
     transition: box-shadow 0.3s ease-in; }
     .fruit_vegetables .specifications:hover {
       box-shadow: 5px 5px 7px #09a626; }
     .fruit_vegetables .specifications h3 {
-      font-size: 48px;
-      line-height: 48px;
-      color: #000000;
-      font-weight: normal; }
+      font-size: calc(40px + 8 * ((100vw - 320px) / 1120));
+      line-height: 1;
+      color: #000000; }
     .fruit_vegetables .specifications p {
+      font-size: calc(16px + 2 * ((100vw - 320px) / 1120));
+      line-height: 1.67;
       color: #000000; }
     .fruit_vegetables .specifications .specifications_icon {
       background-color: #F3FBF8;
@@ -95,19 +132,15 @@ a.after:after {
   bottom: -10px;
   left: 50%;
   transform: translateY(41px); }
-.we_best p {
-  font-size: 18px;
-  line-height: 30px;
-  color: #555555; }
 .we_best .servise {
   transition: box-shadow 0.3s ease-in; }
   .we_best .servise h4 {
     font-weight: bold;
-    font-size: 20px;
-    line-height: 32px; }
+    font-size: calc(18px + 2 * ((100vw - 320px) / 1120));
+    line-height: 1.5; }
   .we_best .servise p {
     font-size: 14px;
-    line-height: 20px;
+    line-height: 1.43;
     color: #555555; }
   .we_best .servise:hover {
     box-shadow: 0 0 17px #75ba75; }
@@ -127,47 +160,112 @@ a.after:after {
 
 .special_items {
   background-color: rgba(9, 166, 109, 0.05); }
-  .special_items p {
-    font-size: 18px;
-    line-height: 30px;
-    color: #555555; }
+  .special_items .special_items-text {
+    z-index: 1; }
+  .special_items .leaves {
+    bottom: -20px;
+    right: -190px; }
 
-.heading {
-  font-family: "Rosario", sans-serif;
-  font-weight: bold;
-  font-size: 70px;
-  line-height: 90px; }
-
-.btn-now {
-  text-decoration: none;
+.reviews .titles {
+  position: absolute;
+  z-index: 2; }
+  @media screen and (max-width: 1199px) {
+    .reviews .titles {
+      top: 10px; } }
+  @media screen and (max-width: 991px) {
+    .reviews .titles {
+      position: static; } }
+.reviews h4 {
   font-weight: 500;
+  font-size: calc(24px + 6 * ((100vw - 320px) / 1120));
+  line-height: 1.2; }
+.reviews .reit img {
+  width: 23px;
+  height: 23px; }
+.reviews .owl-carousel .reviews_owl-content-text {
+  width: 50%; }
+  @media screen and (max-width: 767px) {
+    .reviews .owl-carousel .reviews_owl-content-text {
+      width: 100%;
+      order: 2; } }
+.reviews .owl-carousel .reviews_owl-content-photo {
+  width: 42%; }
+  @media screen and (max-width: 575px) {
+    .reviews .owl-carousel .reviews_owl-content-photo {
+      display: none; } }
+.reviews .owl-carousel .owl-nav {
+  position: absolute;
+  bottom: -16px;
+  left: 25%; }
+  @media screen and (max-width: 991px) {
+    .reviews .owl-carousel .owl-nav {
+      left: 35%; } }
+  @media screen and (max-width: 575px) {
+    .reviews .owl-carousel .owl-nav {
+      left: 58%; } }
+  .reviews .owl-carousel .owl-nav .owl-prev {
+    width: 56px;
+    height: 56px;
+    border: 1px solid #CCCCCC;
+    border-radius: 50%;
+    background-color: transparent;
+    margin-right: 26px; }
+    .reviews .owl-carousel .owl-nav .owl-prev span {
+      display: none; }
+    @media screen and (max-width: 575px) {
+      .reviews .owl-carousel .owl-nav .owl-prev {
+        margin-right: 10px; } }
+    .reviews .owl-carousel .owl-nav .owl-prev:hover:before {
+      transform: scale(1.7); }
+    .reviews .owl-carousel .owl-nav .owl-prev:before {
+      content: url("../images/icons/arrow_nav.svg");
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      vertical-align: middle;
+      transition: transform 0.2s ease-in; }
+  .reviews .owl-carousel .owl-nav .owl-next {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #09A66D; }
+    .reviews .owl-carousel .owl-nav .owl-next span {
+      display: none; }
+    .reviews .owl-carousel .owl-nav .owl-next:hover:before {
+      transform: scale(1.7); }
+    .reviews .owl-carousel .owl-nav .owl-next:before {
+      content: url("../images/icons/arrow_naw-white.svg");
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      vertical-align: middle;
+      transition: transform 0.2s ease-in; }
+
+.app .app_btn {
   font-size: 18px;
-  color: #222222;
+  line-height: 18px;
+  color: #333333;
+  background: #F3FBF8;
+  border-radius: 50px;
+  text-decoration: none;
   display: inline-block;
-  border: none;
-  padding: 0;
-  transition: all 0.2s ease-in; }
+  padding: 11px 24px; }
+.app .last_photo {
+  left: 41px;
+  top: -32px; }
 
-.btn-now:after {
-  content: url("../images/icons/arrow.png");
-  width: 64px;
-  height: 64px;
-  line-height: 64px;
-  background-color: #09A66D;
-  border-radius: 50%;
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 20px;
-  transition: opacity 0.2s ease-in; }
-
-.btn-now:focus, .btn-now:active:focus {
-  box-shadow: none; }
-
-.btn-now:hover, .btn-now:active {
-  color: #09A66D;
-  background-color: transparent; }
-
-.btn-now:hover::after {
-  opacity: 0.8; }
+footer h5 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.29; }
+footer a {
+  font-size: 18px;
+  line-height: 1.28;
+  color: #555555; }
+footer ul {
+  list-style: none;
+  padding: 0; }
+  footer ul a {
+    text-decoration: none; }
 
 /*# sourceMappingURL=styles.css.map */
