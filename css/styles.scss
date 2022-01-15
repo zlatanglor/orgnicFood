@@ -1,4 +1,6 @@
-
+@import "bootstrap.min.css";
+@import "owl.carousel.min.css";
+@import "owl.theme.default.min.css";
 
 $main_font: 'DM Sans', sans-serif;
 $rosario_font: 'Rosario', sans-serif;
@@ -128,12 +130,48 @@ a.after:after{
     border-top: none!important;
   }
 }
-
+#scroll_top{
+  background-color: $green_color;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  margin: 30px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s;
+  z-index: 1000;
+  display: none;
+  text-decoration: none;
+  &:hover{
+    cursor: pointer;
+    background-color: #333;
+  }
+  &:active{
+    background-color: #555;
+  }
+  &:after{
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+  &.show_scroll{
+    display: inline-block;
+  }
+}
 
 header{
   .navbar-brand {
     position: absolute;
     left: 50%;
+    &:hover{
+      animation: photo 3s 1;
+    }
     @include max-screen(991px){
       position: static;
     }
@@ -144,11 +182,18 @@ header{
 }
 #fruit_vegetables{
   background-color: $gray_green;
+  h1{
+    animation: text 3s 1;
+    & + p{
+      animation: text 3s 1;
+    }
+  }
   .leaves{
     left: -80px;
     top: -140px;
     @include max-screen(991px){
       top: -80px;
+      max-height: 330px;
     }
   }
   .specifications{
@@ -158,12 +203,16 @@ header{
       width: 32%;
     }
     &:hover{
-      box-shadow: 5px 5px 7px #09a626;
+      box-shadow: 0 0 10px rgba(23, 35, 25, 0.85);
+      .specifications_icon{
+        transform: scale(1.1) scaleZ(1) rotateX(25deg) rotateY(0);
+      }
     }
     h3{
       @include adaptiv-font(48,25);
       line-height: 1;
       color: #000000;
+      font-weight: normal;
     }
     p{
       @include adaptiv-font(18,10);
@@ -176,6 +225,7 @@ header{
       height: 64px;
       line-height: 64px;
       border-radius: 50%;
+      transition: all 0.3s ease;
       img{
         width: 32px;
         height: 32px;
@@ -194,12 +244,26 @@ header{
 }
 #we_best {
   .arrow {
+    &:hover{
+      &:before{
+        background-color: $gray_green;
+        box-shadow: 0 0 10px black;
+      }
+    }
     &:before {
       content: url("../images/icons/arrow_gr.svg");
       position: absolute;
       bottom: -10px;
       left: 50%;
-      transform: translateY(31px);
+      transform: translateY(35px);
+      width: 55px;
+      height: 55px;
+      background-color: transparent;
+      border-radius: 50%;
+      align-items: center;
+      text-align: center;
+      line-height: 78px;
+      transition: all 0.3s ease-in;
     }
   }
   .servise{
@@ -216,6 +280,9 @@ header{
     transition: box-shadow 0.3s ease-in;
     &:hover{
       box-shadow: 0 0 17px #75ba75;
+      .servise_icon{
+        transform: scale(1.1) scaleZ(1) rotateX(25deg) rotateY(0);
+      }
     }
     .servise_icon{
       background-color: $gray_green;
@@ -223,6 +290,7 @@ header{
       height: 80px;
       line-height: 80px;
       border-radius: 50%;
+      transition: all 0.3s ease;
       img{
         width: 40px;
         height: 40px;
@@ -375,6 +443,11 @@ footer{
     line-height: 1.28;
     color: $color_text;
   }
+  .logo{
+    &:hover{
+      animation: photo 2s 1;
+    }
+  }
   ul{
     a{
       text-decoration: none;
@@ -382,39 +455,34 @@ footer{
   }
 }
 
-#scroll_top{
-  background-color: $green_color;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  border-radius: 4px;
-  margin: 30px;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  transition: background-color .3s;
-  z-index: 1000;
-  display: none;
-  text-decoration: none;
-  &:hover{
-    cursor: pointer;
-    background-color: #333;
+@keyframes text{
+  0%{
+    transform: translate(0, 120px);
+    opacity:0;
+    transition: all 0.8s ease;
   }
-  &:active{
-    background-color: #555;
-  }
-  &:after{
-    content: "\f077";
-    font-family: FontAwesome;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 2em;
-    line-height: 50px;
-    color: #fff;
-  }
-  &.show_scroll{
-    display: inline-block;
+  100%{
+    transform: translate(0,0);
+    opacity:1;
+    transition: all 0.8s ease;
   }
 }
+@keyframes photo {
+  0%{
+    //transform: rotateY(0);
+    transform: rotateX(0) rotateY(0) rotateZ(0);
+    transition: all 0.8s ease;
+  }
+  50%{
+    transform: rotateX(15deg) rotateY(180deg) rotateZ(-8deg);
+    //transition: all 0.8s ease;
+  }
+  100%{
+    transform: rotateX(0) rotateY(360deg) rotateZ(0);
+    transition: all 0.8s ease;
+  }
+}
+
+
 
 

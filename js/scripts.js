@@ -20,18 +20,18 @@ $(document).ready(function(){
             btn.removeClass('show_scroll');
         }
     });
-    // btn.on('click', function(e) {
-    //     e.preventDefault();
-    //     $('html, body').animate({scrollTop:0}, '500');
-    // });
+    btn.on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({scrollTop:0}, '500');
+    });
 // Anchor link
-//     $("a.scrollto").click(function() {
-//         var elementClick = $(this).attr("href")
-//         var destination = $(elementClick).offset().top;
-//         jQuery("html:not(:animated),body:not(:animated)").animate({
-//             scrollTop: destination
-//         }, 1300);
-//         return false;
-//     });
+    $("a.scrollto").click(function() {
+        var elementClick = $(this).attr("href")
+        var destination = $(elementClick).offset().top;
+        jQuery("html:not(:animated),body:not(:animated)").animate({
+            scrollTop: destination
+        }, 1300);
+        return false;
+    });
 });
 

@@ -1,3 +1,6 @@
+@import url(bootstrap.min.css);
+@import url(owl.carousel.min.css);
+@import url(owl.theme.default.min.css);
 body {
   font-family: "DM Sans", sans-serif;
   font-weight: normal;
@@ -91,9 +94,41 @@ a.after:after {
   .border-top {
     border-top: none !important; } }
 
+#scroll_top {
+  background-color: #09A66D;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  margin: 30px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s;
+  z-index: 1000;
+  display: none;
+  text-decoration: none; }
+  #scroll_top:hover {
+    cursor: pointer;
+    background-color: #333; }
+  #scroll_top:active {
+    background-color: #555; }
+  #scroll_top:after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff; }
+  #scroll_top.show_scroll {
+    display: inline-block; }
+
 header .navbar-brand {
   position: absolute;
   left: 50%; }
+  header .navbar-brand:hover {
+    animation: photo 3s 1; }
   @media screen and (max-width: 991px) {
     header .navbar-brand {
       position: static; } }
@@ -102,12 +137,17 @@ header .navbar-light .navbar-nav .nav-link {
 
 #fruit_vegetables {
   background-color: #F3FBF8; }
+  #fruit_vegetables h1 {
+    animation: text 3s 1; }
+    #fruit_vegetables h1 + p {
+      animation: text 3s 1; }
   #fruit_vegetables .leaves {
     left: -80px;
     top: -140px; }
     @media screen and (max-width: 991px) {
       #fruit_vegetables .leaves {
-        top: -80px; } }
+        top: -80px;
+        max-height: 330px; } }
   #fruit_vegetables .specifications {
     background-color: white;
     transition: box-shadow 0.3s ease-in; }
@@ -115,11 +155,14 @@ header .navbar-light .navbar-nav .nav-link {
       #fruit_vegetables .specifications {
         width: 32%; } }
     #fruit_vegetables .specifications:hover {
-      box-shadow: 5px 5px 7px #09a626; }
+      box-shadow: 0 0 10px rgba(23, 35, 25, 0.85); }
+      #fruit_vegetables .specifications:hover .specifications_icon {
+        transform: scale(1.1) scaleZ(1) rotateX(25deg) rotateY(0); }
     #fruit_vegetables .specifications h3 {
       font-size: calc(25px + 23 * ((100vw - 320px) / 1120));
       line-height: 1;
-      color: #000000; }
+      color: #000000;
+      font-weight: normal; }
     #fruit_vegetables .specifications p {
       font-size: calc(10px + 8 * ((100vw - 320px) / 1120));
       line-height: 1.67;
@@ -129,7 +172,8 @@ header .navbar-light .navbar-nav .nav-link {
       width: 64px;
       height: 64px;
       line-height: 64px;
-      border-radius: 50%; }
+      border-radius: 50%;
+      transition: all 0.3s ease; }
       #fruit_vegetables .specifications .specifications_icon img {
         width: 32px;
         height: 32px; }
@@ -142,12 +186,23 @@ header .navbar-light .navbar-nav .nav-link {
             width: 16px;
             height: 16px; } }
 
+#we_best .arrow:hover:before {
+  background-color: #F3FBF8;
+  box-shadow: 0 0 10px black; }
 #we_best .arrow:before {
   content: url("../images/icons/arrow_gr.svg");
   position: absolute;
   bottom: -10px;
   left: 50%;
-  transform: translateY(31px); }
+  transform: translateY(35px);
+  width: 55px;
+  height: 55px;
+  background-color: transparent;
+  border-radius: 50%;
+  align-items: center;
+  text-align: center;
+  line-height: 78px;
+  transition: all 0.3s ease-in; }
 #we_best .servise {
   transition: box-shadow 0.3s ease-in; }
   #we_best .servise h4 {
@@ -160,12 +215,15 @@ header .navbar-light .navbar-nav .nav-link {
     color: #555555; }
   #we_best .servise:hover {
     box-shadow: 0 0 17px #75ba75; }
+    #we_best .servise:hover .servise_icon {
+      transform: scale(1.1) scaleZ(1) rotateX(25deg) rotateY(0); }
   #we_best .servise .servise_icon {
     background-color: #F3FBF8;
     width: 80px;
     height: 80px;
     line-height: 80px;
-    border-radius: 50%; }
+    border-radius: 50%;
+    transition: all 0.3s ease; }
     #we_best .servise .servise_icon img {
       width: 40px;
       height: 40px; }
@@ -281,37 +339,28 @@ footer a {
   font-size: 18px;
   line-height: 1.28;
   color: #555555; }
+footer .logo:hover {
+  animation: photo 2s 1; }
 footer ul a {
   text-decoration: none; }
 
-#scroll_top {
-  background-color: #09A66D;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  border-radius: 4px;
-  margin: 30px;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  transition: background-color .3s;
-  z-index: 1000;
-  display: none;
-  text-decoration: none; }
-  #scroll_top:hover {
-    cursor: pointer;
-    background-color: #333; }
-  #scroll_top:active {
-    background-color: #555; }
-  #scroll_top:after {
-    content: "\f077";
-    font-family: FontAwesome;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 2em;
-    line-height: 50px;
-    color: #fff; }
-  #scroll_top.show_scroll {
-    display: inline-block; }
+@keyframes text {
+  0% {
+    transform: translate(0, 120px);
+    opacity: 0;
+    transition: all 0.8s ease; }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+    transition: all 0.8s ease; } }
+@keyframes photo {
+  0% {
+    transform: rotateX(0) rotateY(0) rotateZ(0);
+    transition: all 0.8s ease; }
+  50% {
+    transform: rotateX(15deg) rotateY(180deg) rotateZ(-8deg); }
+  100% {
+    transform: rotateX(0) rotateY(360deg) rotateZ(0);
+    transition: all 0.8s ease; } }
 
 /*# sourceMappingURL=styles.css.map */

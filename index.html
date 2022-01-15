@@ -10,9 +10,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Rosario:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -104,7 +101,7 @@
 </section>
 <section id="we_best" class="py-5">
     <div class="container mt-lg-5">
-        <h2 class="titles mb-4">Why We Aer The Best?</h2>
+        <h2 class="titles mb-4 scrollflow -opacity -slide-top">Why We Aer The Best?</h2>
         <p class="paragraph_text pt-1 mb-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
             Lorem Ipsum has been the industry's standard dummy text ever since the<br>
             1500s, when an unknown printer took a galley...</p>
@@ -130,7 +127,7 @@
                             and typesetting industry.</p>
                     </div>
                 </div>
-                <div class="servise  py-4  d-flex align-items-center justify-content-center">
+                <div class="servise  py-4  d-flex align-items-center justify-content-center position-relative">
                     <div class="servise_icon text-center me-4 my-3">
                         <img src="images/icons/fast_time.svg" alt="fast_time">
                     </div>
@@ -161,7 +158,7 @@
                 </picture>
             </div>
             <div class="special_items-text col-lg-6 pt-lg-4 ps-lg-4 position-relative">
-                <h2 class="titles mb-3">Explor Our Special Items</h2>
+                <h2 class="titles mb-3 scrollflow -opacity -slide-top">Explor Our Special Items</h2>
                 <p class="paragraph_text mb-4 pt-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley...</p>
                 <a class="btn btn-outline-dark btn-now pt-lg-4">Explor Now</a>
             </div>
@@ -171,7 +168,7 @@
 </section>
 <section id="reviews" class="py-5 position-relative">
     <div class="container py-lg-5">
-        <h3 class="titles mb-4">What Our Customers<br>
+        <h3 class="titles mb-4 scrollflow -opacity -slide-top">What Our Customers<br>
             About Us saying</h3>
         <div class="owl-carousel">
             <div class="reviews_owl-content d-flex justify-content-sm-center justify-content-md-between align-items-md-center align-items-lg-end flex-wrap">
@@ -223,7 +220,7 @@
             </div>
             <div class="col-md-7">
                 <a class="app_btn mb-3" href="#">Download App</a>
-                <h3 class="titles mb-3">Simple Way To Order Your Organic Fruit </h3>
+                <h3 class="titles mb-3 scrollflow -opacity -slide-top">Simple Way To Order Your Organic Fruit </h3>
                 <p class="paragraph_text mb-5 pt-1">Lorem Ipsum is simply dummy text of the printing and typesetting <br>
                     industry. Lorem Ipsum has been the industry's standard dummy text <br>
                     ever since the 1500s, when an unknown printer...</p>
@@ -237,20 +234,20 @@
     <div class="container">
         <div class="row justify-content-between text-center text-sm-start">
             <div class="col-lg-4 mb-3 mb-lg-0">
-                <a class="d-inline-block mb-3 mb-lg-4" href="index.html"><img src="images/logo.svg" alt="logo"></a>
+                <a class="d-inline-block mb-3 mb-lg-4 logo" href="index.html"><img src="images/logo.svg" alt="logo"></a>
                 <p class="paragraph_text pt-1 m-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer...</p>
             </div>
             <div class="col-6 col-sm-4 col-lg-2 offset-lg-1">
                 <h5 class="mb-lg-4">Navigation</h5>
                 <ul class="pt-lg-3 m-0 list-unstyled p-0">
                     <li class="mb-3 mb-lg-4">
-                        <a href="#fruit_vegetables">About Us</a>
+                        <a class="scrollto" href="#fruit_vegetables">About Us</a>
                     </li>
                     <li class="mb-3 mb-lg-4">
-                        <a href="#we_best">Service</a>
+                        <a class="scrollto" href="#we_best">Service</a>
                     </li>
                     <li>
-                        <a href="#special_items">Menu</a>
+                        <a class="scrollto" href="#special_items">Menu</a>
                     </li>
                 </ul>
             </div>
@@ -258,13 +255,13 @@
                 <h5 class="mb-lg-4">Resources</h5>
                 <ul class="pt-lg-3 m-0 list-unstyled p-0">
                     <li class="mb-3 mb-lg-4">
-                        <a href="#reviews">Reviews</a>
+                        <a class="scrollto" href="#reviews">Reviews</a>
                     </li>
                     <li class="mb-3 mb-lg-4">
                         <a href="#">Blog</a>
                     </li>
                     <li>
-                        <a href="#app">Update News</a>
+                        <a class="scrollto" href="#app">Update News</a>
                     </li>
                 </ul>
             </div>
@@ -287,12 +284,13 @@
     </div>
 </footer>
 <!--Scroll to top-->
-<a id="scroll_top" href="#"></a>
+<a id="scroll_top"></a>
 
 <script src="https://kit.fontawesome.com/41bcebc9a3.js" crossorigin="anonymous"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
+<script src="js/scrollflow.js"></script>
 <script src="js/scripts.js"></script>
 </body>
 </html>
