@@ -100,156 +100,156 @@ header .navbar-brand {
 header .navbar-light .navbar-nav .nav-link {
   color: #222222; }
 
-.fruit_vegetables {
+#fruit_vegetables {
   background-color: #F3FBF8; }
-  .fruit_vegetables .leaves {
+  #fruit_vegetables .leaves {
     left: -80px;
     top: -140px; }
     @media screen and (max-width: 991px) {
-      .fruit_vegetables .leaves {
+      #fruit_vegetables .leaves {
         top: -80px; } }
-  .fruit_vegetables .specifications {
+  #fruit_vegetables .specifications {
     background-color: white;
     transition: box-shadow 0.3s ease-in; }
     @media screen and (max-width: 575px) {
-      .fruit_vegetables .specifications {
+      #fruit_vegetables .specifications {
         width: 32%; } }
-    .fruit_vegetables .specifications:hover {
+    #fruit_vegetables .specifications:hover {
       box-shadow: 5px 5px 7px #09a626; }
-    .fruit_vegetables .specifications h3 {
+    #fruit_vegetables .specifications h3 {
       font-size: calc(25px + 23 * ((100vw - 320px) / 1120));
       line-height: 1;
       color: #000000; }
-    .fruit_vegetables .specifications p {
+    #fruit_vegetables .specifications p {
       font-size: calc(10px + 8 * ((100vw - 320px) / 1120));
       line-height: 1.67;
       color: #000000; }
-    .fruit_vegetables .specifications .specifications_icon {
+    #fruit_vegetables .specifications .specifications_icon {
       background-color: #F3FBF8;
       width: 64px;
       height: 64px;
       line-height: 64px;
       border-radius: 50%; }
-      .fruit_vegetables .specifications .specifications_icon img {
+      #fruit_vegetables .specifications .specifications_icon img {
         width: 32px;
         height: 32px; }
       @media screen and (max-width: 575px) {
-        .fruit_vegetables .specifications .specifications_icon {
+        #fruit_vegetables .specifications .specifications_icon {
           width: 32px;
           height: 32px;
           line-height: 32px; }
-          .fruit_vegetables .specifications .specifications_icon img {
+          #fruit_vegetables .specifications .specifications_icon img {
             width: 16px;
             height: 16px; } }
 
-.we_best .arrow:before {
+#we_best .arrow:before {
   content: url("../images/icons/arrow_gr.svg");
   position: absolute;
   bottom: -10px;
   left: 50%;
   transform: translateY(31px); }
-.we_best .servise {
+#we_best .servise {
   transition: box-shadow 0.3s ease-in; }
-  .we_best .servise h4 {
+  #we_best .servise h4 {
     font-weight: bold;
     font-size: calc(18px + 2 * ((100vw - 320px) / 1120));
     line-height: 1.5; }
-  .we_best .servise p {
+  #we_best .servise p {
     font-size: 14px;
     line-height: 1.43;
     color: #555555; }
-  .we_best .servise:hover {
+  #we_best .servise:hover {
     box-shadow: 0 0 17px #75ba75; }
-  .we_best .servise .servise_icon {
+  #we_best .servise .servise_icon {
     background-color: #F3FBF8;
     width: 80px;
     height: 80px;
     line-height: 80px;
     border-radius: 50%; }
-    .we_best .servise .servise_icon img {
+    #we_best .servise .servise_icon img {
       width: 40px;
       height: 40px; }
-  .we_best .servise.bg-ods {
+  #we_best .servise.bg-ods {
     background-color: #F3FBF8; }
-    .we_best .servise.bg-ods .servise_icon {
+    #we_best .servise.bg-ods .servise_icon {
       background-color: white; }
 
-.special_items {
+#special_items {
   background-color: rgba(9, 166, 109, 0.05); }
-  .special_items .special_items-text {
+  #special_items .special_items-text {
     z-index: 1; }
-  .special_items .leaves {
+  #special_items .leaves {
     bottom: -20px;
     right: -190px; }
 
-.reviews .titles {
+#reviews .titles {
   position: absolute;
   z-index: 2; }
   @media screen and (max-width: 1199px) {
-    .reviews .titles {
+    #reviews .titles {
       top: 10px; } }
   @media screen and (max-width: 991px) {
-    .reviews .titles {
+    #reviews .titles {
       position: static; } }
-.reviews h4 {
+#reviews h4 {
   font-weight: 500;
   font-size: calc(24px + 6 * ((100vw - 320px) / 1120));
   line-height: 1.2; }
-.reviews .reit img {
+#reviews .reit img {
   width: 23px;
   height: 23px; }
-.reviews .owl-carousel .reviews_owl-content-text {
+#reviews .owl-carousel .reviews_owl-content-text {
   width: 50%; }
   @media screen and (max-width: 767px) {
-    .reviews .owl-carousel .reviews_owl-content-text {
+    #reviews .owl-carousel .reviews_owl-content-text {
       width: 100%;
       order: 2; } }
-.reviews .owl-carousel .reviews_owl-content-photo {
+#reviews .owl-carousel .reviews_owl-content-photo {
   width: 42%; }
   @media screen and (max-width: 575px) {
-    .reviews .owl-carousel .reviews_owl-content-photo {
+    #reviews .owl-carousel .reviews_owl-content-photo {
       display: none; } }
-.reviews .owl-carousel .owl-nav {
+#reviews .owl-carousel .owl-nav {
   position: absolute;
   bottom: -16px;
   left: 25%; }
   @media screen and (max-width: 991px) {
-    .reviews .owl-carousel .owl-nav {
+    #reviews .owl-carousel .owl-nav {
       left: 35%; } }
   @media screen and (max-width: 575px) {
-    .reviews .owl-carousel .owl-nav {
+    #reviews .owl-carousel .owl-nav {
       left: 58%; } }
-  .reviews .owl-carousel .owl-nav .owl-prev {
+  #reviews .owl-carousel .owl-nav .owl-prev {
     width: 56px;
     height: 56px;
     border: 1px solid #CCCCCC;
     border-radius: 50%;
     background-color: transparent;
     margin-right: 26px; }
-    .reviews .owl-carousel .owl-nav .owl-prev span {
+    #reviews .owl-carousel .owl-nav .owl-prev span {
       display: none; }
     @media screen and (max-width: 575px) {
-      .reviews .owl-carousel .owl-nav .owl-prev {
+      #reviews .owl-carousel .owl-nav .owl-prev {
         margin-right: 10px; } }
-    .reviews .owl-carousel .owl-nav .owl-prev:hover:before {
+    #reviews .owl-carousel .owl-nav .owl-prev:hover:before {
       transform: scale(1.7); }
-    .reviews .owl-carousel .owl-nav .owl-prev:before {
+    #reviews .owl-carousel .owl-nav .owl-prev:before {
       content: url("../images/icons/arrow_nav.svg");
       display: inline-block;
       width: 32px;
       height: 32px;
       vertical-align: middle;
       transition: transform 0.2s ease-in; }
-  .reviews .owl-carousel .owl-nav .owl-next {
+  #reviews .owl-carousel .owl-nav .owl-next {
     width: 56px;
     height: 56px;
     border-radius: 50%;
     background-color: #09A66D; }
-    .reviews .owl-carousel .owl-nav .owl-next span {
+    #reviews .owl-carousel .owl-nav .owl-next span {
       display: none; }
-    .reviews .owl-carousel .owl-nav .owl-next:hover:before {
+    #reviews .owl-carousel .owl-nav .owl-next:hover:before {
       transform: scale(1.7); }
-    .reviews .owl-carousel .owl-nav .owl-next:before {
+    #reviews .owl-carousel .owl-nav .owl-next:before {
       content: url("../images/icons/arrow_naw-white.svg");
       display: inline-block;
       width: 32px;
@@ -257,7 +257,7 @@ header .navbar-light .navbar-nav .nav-link {
       vertical-align: middle;
       transition: transform 0.2s ease-in; }
 
-.app .app_btn {
+#app .app_btn {
   font-size: 18px;
   line-height: 18px;
   color: #333333;
@@ -265,8 +265,11 @@ header .navbar-light .navbar-nav .nav-link {
   border-radius: 50px;
   text-decoration: none;
   display: inline-block;
-  padding: 11px 24px; }
-.app .last_photo {
+  padding: 11px 24px;
+  transition: box-shadow 0.3s ease-in; }
+  #app .app_btn:hover {
+    box-shadow: 0 0 10px black; }
+#app .last_photo {
   left: 41px;
   top: -32px; }
 

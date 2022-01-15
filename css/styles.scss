@@ -142,7 +142,7 @@ header{
     color: #222222;
   }
 }
-.fruit_vegetables{
+#fruit_vegetables{
   background-color: $gray_green;
   .leaves{
     left: -80px;
@@ -192,7 +192,7 @@ header{
     }
   }
 }
-.we_best {
+#we_best {
   .arrow {
     &:before {
       content: url("../images/icons/arrow_gr.svg");
@@ -236,7 +236,7 @@ header{
     }
   }
 }
-.special_items{
+#special_items{
   background-color: rgba(9, 166, 109, 0.05);
   .special_items-text{
     z-index: 1;
@@ -246,7 +246,7 @@ header{
     right: -190px;
   }
 }
-.reviews{
+#reviews{
   .titles{
     position: absolute;
     z-index: 2;
@@ -344,7 +344,7 @@ header{
     }
   }
 }
-.app{
+#app{
   .app_btn{
     font-size: 18px;
     line-height: 18px;
@@ -354,6 +354,10 @@ header{
     text-decoration: none;
     display: inline-block;
     padding: 11px 24px;
+    transition: box-shadow 0.3s ease-in;
+    &:hover{
+      box-shadow: 0 0 10px black;
+    }
   }
   .last_photo{
     left: 41px;
