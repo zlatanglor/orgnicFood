@@ -1,3 +1,5 @@
+
+
 $main_font: 'DM Sans', sans-serif;
 $rosario_font: 'Rosario', sans-serif;
 
@@ -9,13 +11,14 @@ body{
   font-family: $main_font;
   font-weight: normal;
   color: #222222;
+  cursor: default;
 }
-//@mixin max-screen($res) {
-//  @media screen and (max-width: $res) {
-//    @content;
-//  }
-//}
 
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
 //Адаптивный шрифт
 $maxWidth: 1440;
 @mixin adaptiv-font($pcSize, $mobSize) {
@@ -100,9 +103,6 @@ $maxWidth: 1440;
     }
   }
 }
-.ml-58{
-  margin-left: 58px;
-}
 .leaves{
   width: 100%;
   max-width: 612px;
@@ -123,35 +123,50 @@ a.after:after{
   top: 7px;
   right: 14px;
 }
-
-.navbar-collapse{
-  flex-grow: 0;
+.border-top{
+  @include max-screen(768px){
+    border-top: none!important;
+  }
 }
-.navbar-light .navbar-nav .nav-link{
-  color: #222222;
+
+
+header{
+  .navbar-brand {
+    position: absolute;
+    left: 50%;
+    @include max-screen(991px){
+      position: static;
+    }
+  }
+  .navbar-light .navbar-nav .nav-link{
+    color: #222222;
+  }
 }
 .fruit_vegetables{
   background-color: $gray_green;
   .leaves{
     left: -80px;
     top: -140px;
-    @media screen and (max-width:991px){
+    @include max-screen(991px){
       top: -80px;
     }
   }
   .specifications{
     background-color: white;
     transition: box-shadow 0.3s ease-in;
+    @include max-screen(575px){
+      width: 32%;
+    }
     &:hover{
       box-shadow: 5px 5px 7px #09a626;
     }
     h3{
-      @include adaptiv-font(48,40);
+      @include adaptiv-font(48,25);
       line-height: 1;
       color: #000000;
     }
     p{
-      @include adaptiv-font(18,16);
+      @include adaptiv-font(18,10);
       line-height: 1.67;
       color: #000000;
     }
@@ -165,19 +180,26 @@ a.after:after{
         width: 32px;
         height: 32px;
       }
+      @include max-screen(575px){
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        img{
+          width: 16px;
+          height: 16px;
+        }
+      }
     }
   }
 }
-.we_best{
-  span{
-    &.arrow{
-      &:before{
-        content: url("../images/icons/arrow_gr.svg");
-        position: absolute;
-        bottom: -10px;
-        left: 50%;
-        transform: translateY(41px);
-      }
+.we_best {
+  .arrow {
+    &:before {
+      content: url("../images/icons/arrow_gr.svg");
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateY(31px);
     }
   }
   .servise{
@@ -228,13 +250,10 @@ a.after:after{
   .titles{
     position: absolute;
     z-index: 2;
-    @media screen and (max-width: 1399px){
-      //line-height: 70px;
-    }
-    @media screen and (max-width: 1199px){
+    @include max-screen(1199px){
       top: 10px;
     }
-    @media screen and (max-width: 991px){
+    @include max-screen(991px){
       position: static;
     }
   }
@@ -252,14 +271,14 @@ a.after:after{
   .owl-carousel{
     .reviews_owl-content-text{
       width: 50%;
-      @media screen and (max-width: 767px){
+      @include max-screen(767px){
         width: 100%;
         order: 2;
       }
     }
     .reviews_owl-content-photo{
       width: 42%;
-      @media screen and (max-width: 575px){
+      @include max-screen(575px){
         display: none;
       }
     }
@@ -267,10 +286,10 @@ a.after:after{
       position: absolute;
       bottom: -16px;
       left: 25%;
-      @media screen and (max-width: 991px){
+      @include max-screen(991px){
         left: 35%;
       }
-      @media screen and (max-width: 575px){
+      @include max-screen(575px){
         left: 58%;
       }
       .owl-prev{
@@ -283,7 +302,7 @@ a.after:after{
         border-radius: 50%;
         background-color: transparent;
         margin-right: 26px;
-        @media screen and (max-width: 575px){
+        @include max-screen(575px){
           margin-right: 10px;
         }
         &:hover{
@@ -353,10 +372,10 @@ footer{
     color: $color_text;
   }
   ul{
-    list-style: none;
-    padding: 0;
     a{
       text-decoration: none;
     }
   }
 }
+
+
