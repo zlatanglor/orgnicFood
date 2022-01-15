@@ -11,12 +11,27 @@ $(document).ready(function(){
             }
         }
     });
-    // Anchor link
-    $("#menu").on("click","a", function (event) {
-        event.preventDefault();
-        var id  = $(this).attr('href'),
-            top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 1300);
+    // Scroll to top
+    var btn = $('#scroll_top');
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+            btn.addClass('show_scroll');
+        } else {
+            btn.removeClass('show_scroll');
+        }
     });
+    // btn.on('click', function(e) {
+    //     e.preventDefault();
+    //     $('html, body').animate({scrollTop:0}, '500');
+    // });
+// Anchor link
+//     $("a.scrollto").click(function() {
+//         var elementClick = $(this).attr("href")
+//         var destination = $(elementClick).offset().top;
+//         jQuery("html:not(:animated),body:not(:animated)").animate({
+//             scrollTop: destination
+//         }, 1300);
+//         return false;
+//     });
 });
 

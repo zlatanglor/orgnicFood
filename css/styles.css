@@ -284,4 +284,34 @@ footer a {
 footer ul a {
   text-decoration: none; }
 
+#scroll_top {
+  background-color: #09A66D;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  margin: 30px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s;
+  z-index: 1000;
+  display: none;
+  text-decoration: none; }
+  #scroll_top:hover {
+    cursor: pointer;
+    background-color: #333; }
+  #scroll_top:active {
+    background-color: #555; }
+  #scroll_top:after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff; }
+  #scroll_top.show_scroll {
+    display: inline-block; }
+
 /*# sourceMappingURL=styles.css.map */
