@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Rosario:wght@700&display=swap");
-@import url(bootstrap.min.css);
 @import url(owl.carousel.min.css);
 @import url(owl.theme.default.min.css);
 body {
@@ -257,6 +256,48 @@ header .navbar-light .navbar-nav .nav-link {
 #reviews .reit img {
   width: 23px;
   height: 23px; }
+#reviews .reviews_owl-content-photo .reviews_all {
+  max-width: 245px;
+  width: 100%;
+  border-radius: 12px;
+  background: #FFFFFF;
+  box-shadow: -15px 15px 25px rgba(0, 96, 60, 0.04);
+  bottom: 15px;
+  padding: 12px 0 12px 20px; }
+  #reviews .reviews_owl-content-photo .reviews_all .photo_rew img {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    transition: transform 0.3s ease-in; }
+    #reviews .reviews_owl-content-photo .reviews_all .photo_rew img:nth-child(2) {
+      left: -12px; }
+    #reviews .reviews_owl-content-photo .reviews_all .photo_rew img:nth-child(3) {
+      left: -24px; }
+    #reviews .reviews_owl-content-photo .reviews_all .photo_rew img:nth-child(4) {
+      left: -36px; }
+    #reviews .reviews_owl-content-photo .reviews_all .photo_rew img:nth-child(5) {
+      left: -48px; }
+    #reviews .reviews_owl-content-photo .reviews_all .photo_rew img:nth-child(6) {
+      left: -60px; }
+    #reviews .reviews_owl-content-photo .reviews_all .photo_rew img + a {
+      left: -72px; }
+    #reviews .reviews_owl-content-photo .reviews_all .photo_rew img:hover {
+      transform: scale(1.1); }
+  #reviews .reviews_owl-content-photo .reviews_all .photo_rew a {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #F3FBF8;
+    color: #000000;
+    transition: transform 0.3s ease-in;
+    display: inline-block; }
+    #reviews .reviews_owl-content-photo .reviews_all .photo_rew a:hover {
+      transform: scale(1.1); }
+  #reviews .reviews_owl-content-photo .reviews_all .reit img {
+    width: 15px;
+    height: 15px; }
 #reviews .owl-carousel .reviews_owl-content-text {
   width: 50%; }
   @media screen and (max-width: 767px) {
