@@ -25,7 +25,7 @@ $(document).ready(function(){
         $('html, body').animate({scrollTop:0}, '500');
     });
 // Anchor link
-    $("a.scrollto").click(function() {
+    $("a.nav-link").click(function() {
         var elementClick = $(this).attr("href")
         var destination = $(elementClick).offset().top;
         jQuery("html:not(:animated),body:not(:animated)").animate({

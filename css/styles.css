@@ -91,10 +91,6 @@ a.after:after {
   top: 7px;
   right: 14px; }
 
-@media screen and (max-width: 768px) {
-  .border-top {
-    border-top: none !important; } }
-
 #scroll_top {
   background-color: #09A66D;
   width: 50px;
@@ -109,6 +105,13 @@ a.after:after {
   z-index: 1000;
   display: none;
   text-decoration: none; }
+  @media screen and (max-width: 991px) {
+    #scroll_top {
+      width: 30px;
+      height: 30px;
+      margin: 10px;
+      bottom: 0;
+      right: 0; } }
   #scroll_top:hover {
     cursor: pointer;
     background-color: #333; }
@@ -122,8 +125,16 @@ a.after:after {
     font-size: 2em;
     line-height: 50px;
     color: #fff; }
+    @media screen and (max-width: 991px) {
+      #scroll_top:after {
+        line-height: 30px;
+        font-size: 1.5rem; } }
   #scroll_top.show_scroll {
     display: inline-block; }
+
+@media screen and (min-width: 768px) {
+  .border-top {
+    border-top: none !important; } }
 
 header .navbar-brand {
   position: absolute;
@@ -138,6 +149,9 @@ header .navbar-light .navbar-nav .nav-link {
 
 #fruit_vegetables {
   background-color: #F3FBF8; }
+  @media screen and (max-width: 767px) {
+    #fruit_vegetables .paragraph_text br {
+      display: none; } }
   #fruit_vegetables h1 {
     animation: text 3s 1; }
     #fruit_vegetables h1 + p {
@@ -187,23 +201,9 @@ header .navbar-light .navbar-nav .nav-link {
             width: 16px;
             height: 16px; } }
 
-#we_best .arrow:hover:before {
-  background-color: #F3FBF8;
-  box-shadow: 0 0 10px black; }
-#we_best .arrow:before {
-  content: url("../images/icons/arrow_gr.svg");
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateY(35px);
-  width: 55px;
-  height: 55px;
-  background-color: transparent;
-  border-radius: 50%;
-  align-items: center;
-  text-align: center;
-  line-height: 78px;
-  transition: all 0.3s ease-in; }
+@media screen and (max-width: 767px) {
+  #we_best .paragraph_text br {
+    display: none; } }
 #we_best .servise {
   transition: box-shadow 0.3s ease-in; }
   #we_best .servise h4 {
@@ -211,9 +211,12 @@ header .navbar-light .navbar-nav .nav-link {
     font-size: calc(18px + 2 * ((100vw - 320px) / 1120));
     line-height: 1.5; }
   #we_best .servise p {
-    font-size: 14px;
+    font-size: calc(12px + 2 * ((100vw - 320px) / 1120));
     line-height: 1.43;
     color: #555555; }
+    @media screen and (max-width: 575px) {
+      #we_best .servise p br {
+        display: none; } }
   #we_best .servise:hover {
     box-shadow: 0 0 17px #75ba75; }
     #we_best .servise:hover .servise_icon {
@@ -224,10 +227,20 @@ header .navbar-light .navbar-nav .nav-link {
     height: 80px;
     line-height: 80px;
     border-radius: 50%;
+    flex-shrink: 0;
     transition: all 0.3s ease; }
+    @media screen and (max-width: 575px) {
+      #we_best .servise .servise_icon {
+        width: 50px;
+        height: 50px;
+        line-height: 50px; } }
     #we_best .servise .servise_icon img {
       width: 40px;
       height: 40px; }
+      @media screen and (max-width: 575px) {
+        #we_best .servise .servise_icon img {
+          width: 25px;
+          height: 25px; } }
   #we_best .servise.bg-ods {
     background-color: #F3FBF8; }
     #we_best .servise.bg-ods .servise_icon {
@@ -358,6 +371,9 @@ header .navbar-light .navbar-nav .nav-link {
       vertical-align: middle;
       transition: transform 0.2s ease-in; }
 
+@media screen and (max-width: 1199px) {
+  #app .paragraph_text br {
+    display: none; } }
 #app .app_btn {
   font-size: 18px;
   line-height: 18px;
@@ -374,6 +390,18 @@ header .navbar-light .navbar-nav .nav-link {
   left: 41px;
   top: -32px; }
 
+footer .social .facebook {
+  transition: color 0.3s ease-in; }
+  footer .social .facebook:hover {
+    color: #1878f3; }
+footer .social .twitter {
+  transition: color 0.3s ease-in; }
+  footer .social .twitter:hover {
+    color: #1da1f2; }
+footer .social .instagram {
+  transition: color 0.3s ease-in; }
+  footer .social .instagram:hover {
+    color: #efc100; }
 footer h5 {
   font-weight: 500;
   font-size: 24px;
